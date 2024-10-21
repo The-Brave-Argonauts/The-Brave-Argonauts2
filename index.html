@@ -5,61 +5,90 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Brave Argonauts - Ταξιδιωτικά Πακέτα</title>
     <link rel="stylesheet" href="style.css">
+    <!-- Προσθήκη εικονιδίου ιστοσελίδας -->
+    <link rel="icon" href="images/favicon.png" type="image/png">
 </head>
 <body>
     <header>
         <div class="container">
-            <h1>Καλώς ήρθατε στο The Brave Argonauts</h1>
+            <h1>The Brave Argonauts</h1>
             <nav>
                 <ul>
                     <li><a href="#">Αρχική</a></li>
-                    <li><a href="#">Πακέτα Ταξιδιού</a></li>
-                    <li><a href="#">Επικοινωνία</a></li>
+                    <li><a href="#packages">Πακέτα Ταξιδιού</a></li>
+                    <li><a href="#contact">Επικοινωνία</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <section class="packages">
+    <!-- Προσθήκη ενότητας ηρώων με εικόνα φόντου -->
+    <section class="hero">
+        <div class="container">
+            <h2>Εξερευνήστε τον κόσμο μαζί μας</h2>
+            <p>Ανακαλύψτε μοναδικούς προορισμούς και ζήστε ανεπανάληπτες εμπειρίες.</p>
+            <a href="#packages" class="btn">Δείτε τα Πακέτα</a>
+        </div>
+    </section>
+
+    <section class="packages" id="packages">
         <div class="container">
             <h2>Ταξιδιωτικά Πακέτα</h2>
             <div class="package-list">
                 <div class="package">
+                    <img src="images/kerkyra.jpg" alt="Κέρκυρα">
                     <h3>Κέρκυρα</h3>
-                    <p>Απολαύστε τις μαγευτικές παραλίες και τη γραφική Παλιά Πόλη της Κέρκυρας, σε ένα ταξίδι που συνδυάζει φυσική ομορφιά και πλούσια ιστορία.</p>
-                    <p>Τιμή: 450€</p>
+                    <p>Απολαύστε τις μαγευτικές παραλίες και τη γραφική Παλιά Πόλη της Κέρκυρας.</p>
+                    <p class="price">Τιμή: 450€</p>
+                    <a href="#" class="btn">Κράτηση</a>
                 </div>
                 <div class="package">
+                    <img src="images/mykonos.jpg" alt="Μύκονος">
                     <h3>Μύκονος</h3>
-                    <p>Ζήστε την πολυτέλεια και τη νυχτερινή ζωή στη Μύκονο. Το απόλυτο νησί για διασκέδαση και χαλάρωση στις διάσημες παραλίες του.</p>
-                    <p>Τιμή: 600€</p>
+                    <p>Ζήστε την πολυτέλεια και τη νυχτερινή ζωή στη Μύκονο.</p>
+                    <p class="price">Τιμή: 600€</p>
+                    <a href="#" class="btn">Κράτηση</a>
                 </div>
                 <div class="package">
+                    <img src="images/santorini.jpg" alt="Σαντορίνη">
                     <h3>Σαντορίνη</h3>
-                    <p>Ανακαλύψτε τη μαγεία του ηλιοβασιλέματος στη Σαντορίνη και εξερευνήστε τα λευκά χωριά με θέα στην Καλντέρα.</p>
-                    <p>Τιμή: 700€</p>
+                    <p>Ανακαλύψτε τη μαγεία του ηλιοβασιλέματος στη Σαντορίνη.</p>
+                    <p class="price">Τιμή: 700€</p>
+                    <a href="#" class="btn">Κράτηση</a>
                 </div>
                 <div class="package">
+                    <img src="images/pozar.jpg" alt="Λουτρά Πόζαρ">
                     <h3>Λουτρά Πόζαρ</h3>
-                    <p>Απολαύστε τις ιαματικές πηγές και την φυσική ομορφιά στα Λουτρά Πόζαρ, για μια χαλαρωτική απόδραση στη φύση.</p>
-                    <p>Τιμή: 300€</p>
+                    <p>Απολαύστε τις ιαματικές πηγές και τη φυσική ομορφιά στα Λουτρά Πόζαρ.</p>
+                    <p class="price">Τιμή: 300€</p>
+                    <a href="#" class="btn">Κράτηση</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="contact">
+    <section class="contact" id="contact">
         <div class="container">
             <h2>Επικοινωνήστε μαζί μας</h2>
-            <p>Τηλέφωνο: 6947011446</p>
-            <p>Email: info@thebraveargonauts.com</p>
+            <form action="#" method="post">
+                <input type="text" name="name" placeholder="Ονοματεπώνυμο" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <textarea name="message" placeholder="Μήνυμα" required></textarea>
+                <button type="submit" class="btn">Αποστολή</button>
+            </form>
         </div>
     </section>
 
     <footer>
         <div class="container">
             <p>© 2024 The Brave Argonauts. Όλα τα δικαιώματα κατοχυρωμένα.</p>
+            <div class="social">
+                <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
+                <a href="#"><img src="images/instagram.png" alt="Instagram"></a>
+                <a href="#"><img src="images/twitter.png" alt="Twitter"></a>
+            </div>
         </div>
     </footer>
 </body>
 </html>
+
